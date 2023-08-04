@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp convert</title>
+    <link rel="stylesheet" href="tem.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="first_row">
+                <div class="first_col">
+                <label for="input"><h4> GIVE THE TEMPERATURE:</h4></label><br>
+                <input type="number" name="input" id="input"/></div>
+                <div class="second_col"><label for="ouput"><h4>RESULT:</h4></label><br>
+                    <input type="number" name="output" id="output" readonly="" step="any"/>
+                </div>
+                
+
+            </div>
+            <div class="second_row">
+             <select id="conversion">
+                <option value="FtoC">FARENHEIT TO CELSIUS</option>
+                <option value="FtoK">FARENHEIT TO KELVIN</option>
+                <option value="KtoC">KELVIN TO CELSIUS</option>
+                <option value="KtoF">KELVIN TO FARENHEIT</option>
+                <option value="CtoK">CELSIUS TO KELVIN</option>
+                <option value="CtoF">CELSIUS TO FARENHEIT</option>
+             </select>   
+            </div>
+            <div class="third_row">
+                <a href="#" class="hover-link"><button onclick="convert()">CONVERT</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="tem.js"></script>
+</body>
+</html>
